@@ -4,7 +4,7 @@ function HookCounter() {
     const [count, setCount] = useState(0)
     const [name, setName] = useState('')
 
-    useEffect((prevState)=>{
+    useEffect(()=>{
         console.log('updating document tiltle')
         document.title = `you clicked ${count} times`
     }, [count])
